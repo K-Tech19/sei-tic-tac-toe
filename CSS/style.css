@@ -41,8 +41,17 @@ width: 500px;
     text-align: center;
 }
 
-.btn {
-    display: block;
-    margin: 0 50px 0 50px;
+.mainBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
+.btn {
+display: flex;
+flex-direction: column;
+border: 2px solid  royalblue;
+margin: 50px 80px 50px 80px;
+padding: 15px;
+}
