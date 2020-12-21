@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (whosTurn === 'x' ) {
                 e.target.innerText = 'x';
                 spaceSelectionX.push(e.target.id);
+                // checkForWin 
                 console.log(spaceSelectionX);
                 whosTurn = 'o'
             } else {
@@ -43,7 +44,28 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
-
+function checkForWin() {
+let xSelection = [];
+spaceSelectionX.forEach(item => {
+    xSelection.push(item.toString())
+    console.log(xSelection);
+})
+let win1 =[];
+winCombos[0].forEach(item =>{
+    win1.push(item.toString())
+    console.log(win1);
+})
+let win2 = [];
+winCombos[1].forEach(item =>{
+    win2.push(item.toString())
+    console.log(win2);
+})
+let win3 = [];
+winCombos[2].forEach(item =>{
+    win2.push(item.toString())
+    console.log(win3);
+})
+}
 //player 1 "X" variable
 // player 2 "O" variable
 // how to keep score
@@ -55,7 +77,5 @@ document.addEventListener("DOMContentLoaded", () => {
 // how to check how many scores are left
 // create reset button
 // check to see if draw
-
 //  how to clear score
-// what 
 // console.log("hello, world")
