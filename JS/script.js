@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     let spaceSelectionO = [];
     let winner = false;
     let winCombos = [
-        [0,1,2] , //a
-        [3,4,5] , //b
-        [6,7,8] , //c
-        [0,4,8] , //d
-        [2,4,6] , //e
-        [0,3,6] , //f
-        [1,4,7] , //i
-        [2,5,8]  // j
+        [0,1,2] , //win1
+        [3,4,5] , //win2
+        [6,7,8] , //win3
+        [0,4,8] , //win4
+        [2,4,6] , //win5
+        [0,3,6] , //win6
+        [1,4,7] , //win7
+        [2,5,8]  // win8
     ];
 
     const gameBoard = document.querySelector('.gameBoard');
@@ -62,9 +62,35 @@ winCombos[1].forEach(item =>{
 })
 let win3 = [];
 winCombos[2].forEach(item =>{
-    win2.push(item.toString())
+    win3.push(item.toString())
     console.log(win3);
 })
+let win4 = [];
+winCombos[3].forEach(item =>{
+    win4.push(item.toString())
+    console.log(win4);
+})
+let win5 = [];
+winCombos[4].forEach(item =>{
+    win5.push(item.toString())
+    console.log(win5);
+})
+let win6 = [];
+winCombos[5].forEach(item =>{
+    win6.push(item.toString())
+    console.log(win6);
+})
+let win7 = [];
+winCombos[6].forEach(item =>{
+    win7.push(item.toString())
+    console.log(win7);
+})
+let win8 = [];
+winCombos[7].forEach(item =>{
+    win8.push(item.toString())
+    console.log(win8);
+})
+
 }
 //player 1 "X" variable
 // player 2 "O" variable
