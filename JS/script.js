@@ -90,7 +90,7 @@ winCombos[7].forEach(item =>{
     win8.push(item.toString())
     console.log(win8);
 })
-
+// compare to wins 
 }
 //player 1 "X" variable
 // player 2 "O" variable
@@ -103,5 +103,5 @@ winCombos[7].forEach(item =>{
 // how to check how many scores are left
 // create reset button
 // check to see if draw
-//  how to clear score
+// how to clear score
 // console.log("hello, world")
